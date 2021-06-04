@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.posts{
+ width: 1000px;
+ float: right;
+ margin-right: 20px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0 ;
+    font-size: 0.9em;
+    min-width: 400px;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow:  0 0 20px rgba(0,0,0, 0.15);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.content-table thead tr{
+    background-color:lightpink;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+}
+.content-table tr td {
+    padding: 10px 15px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid lightgray;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom:  2px solid black;
+}
+.content-table tbody tr:nth-of-type(even):hover{
+    background-color:lightskyblue;
+    color:black;
+}
+.content-table tbody tr:nth-of-type(odd):hover{
+    background-color:lightgray;
+    color: black;
+}

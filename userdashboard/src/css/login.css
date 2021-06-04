@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.main {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+ 
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+  /* overflow: scroll; */
+}
+main::-webkit-scrollbar {
+  width: 1em;
+}
+main::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+overflow: scroll;
+}
+
+main::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px #3535356b;
+    color:white;
+    
+}
+
+.wrapper label {
+    display: block;
+    padding-bottom: 0.2rem
+}
+
+hr{
+  background-color: darkgray;
+}
+
+.wrapper .form .row {
+    padding: 0.6rem 0
+}
+
+.wrapper .form .row .form-control {
+    box-shadow: none
+}
+
+.wrapper .form .option {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer
+}
+
+.wrapper .form .option input {
+    opacity: 0
+}
+
+.wrapper .form .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #bbb;
+    border-radius: 50%
+}
+
+.wrapper .form .option input:checked~.checkmark:after {
+    display: block
+}
+
+.wrapper .form .option:hover .checkmark {
+    background: #f3f3f3
+}
+
+.wrapper .form .option .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: linear-gradient(45deg, #ce1e53, #8f00c7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.wrapper  input[type="text"],
+.wrapper  input[type="date"],
+.wrapper  input[type="tel"],
+.wrapper  input[type="password"]
+{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 300px;
+  outline: none;
+  color:white;
+  border-radius: 24px;
+  transition: 0.25s
+}
+input.error {
+    border: 1px solid #EADAE4;
+  }
+  
+  .error {
+    color:#db2269;
+    font-size: bold;
+    display: relative;
+  }
+
+  .error1 {
+    color:lightgreen;
+    font-size: bold;
+    display: relative;
+  }
+#address{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s
+}
+.btn-ultra-voilet {
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border: 3px solid #eee;
+  border-radius: 35px;
+}
+#address:focus{
+  border-color: #2ecc71
+}
+#display{
+  display: inline;;
+}
+label{
+  font-size: 20px;
+}
+.wrapper input[type="text"]:focus,
+.wrapper  input[type="date"]:focus,
+.wrapper  input[type="tel"]:focus,
+.wrapper  input[type="password"]:focus {
+  width: 350px;
+  border-color: #2ecc71
+}
+
+#city option{
+  color: black;
+}
+#city {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  width:300px;
+  color: white;
+}
+
+
+#city:focus {
+  width: 350px;
+    border-color: #2ecc71
+}
+
+@media(max-width: 768.5px) {
+    .wrapper {
+        margin: 30px
+    }
+
+    .wrapper .form .row {
+        padding: 0
+    }
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        padding: 25px;
+        margin: 20px
+    }
+}

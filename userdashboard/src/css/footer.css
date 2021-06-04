@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.footer{
+    background-color: black;
+    color: cornsilk;
+}
+.thankyou-note{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-top:40px;
+}

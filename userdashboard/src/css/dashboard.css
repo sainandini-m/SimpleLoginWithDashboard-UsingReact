@@ -1,0 +1,26 @@
+body{
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+}
+
+
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lime;
+    background-color: magenta;
+    width: 100%;
+    display: block;
+    height: 60px;
+}
+
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: lime;
+    background-color: magenta;
+    width: 100%;
+    clear: both;
+    height: 100px;
+    margin-top: 10px;
+}
